@@ -1,4 +1,4 @@
-import { useImperativeHandle, forwardRef, useRef } from 'react'
+import { useImperativeHandle, useRef } from 'react'
 
 const ResultModal = forwardRef(function ResultModal(
   { result, targetTime },
@@ -15,7 +15,6 @@ const ResultModal = forwardRef(function ResultModal(
   })
 
   return (
-    // 3. Assign the local dialog ref to the <dialog> element
     <dialog ref={dialog} className="result-modal">
       <h2> You {result} </h2>
       <p>
